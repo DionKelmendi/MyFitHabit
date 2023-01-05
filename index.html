@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <script src="https://kit.fontawesome.com/f4fb5010ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ------------------------- Header ------------------------- -->
+  <header>
+    <ul>
+
+      <div>
+        <li class="logo"> My Fit Habit</li>
+      </div>
+
+      <div>
+        <li class="item"><a href="about.html"> About Us </a></li>
+        <li class="item"><a href="products.html"> Products </a></li>
+        <li class="item"><a href="products.html"> Item3 </a></li>
+        <li class="item"><a href="products.html"> Item4 </a></li>
+        <li class="item">
+          <a href="login.html">
+            <i class="fa-solid fa-users"></i>
+            Log In
+          </a>
+        </li>
+      </div>
+
+    </ul>
+  </header>
+
+  <!-- ------------------------- Mask ------------------------- -->
+
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <mask id="mask1">
+      <path fill="#FFFFFF"
+        d="M53.5,-50.6C61.8,-32.3,55.6,-10.5,49.6,9.4C43.5,29.3,37.5,47.3,23.5,57.1C9.6,67,-12.2,68.7,-27,60.1C-41.9,51.4,-49.8,32.3,-52.4,13.9C-55,-4.4,-52.3,-22,-42.6,-40.5C-33,-59.1,-16.5,-78.8,3.1,-81.2C22.6,-83.7,45.3,-68.9,53.5,-50.6Z"
+        transform="translate(0 0)" id="prova" />
+    </mask>
+  </svg>
+
+  <!-- ------------------------- Hero ------------------------- -->
+  <section class="hero">
+
+    <div class="container">
+
+      <img src="images\heroImage.jpg" alt="">
+
+      <div class="subtext">
+        <h1> My Fit Habit </h1>
+        <p> NenTitulli </p>
+        <a href="#"> <button class="smallButton"> Order Online </button> </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ------------------------- Filler Section / One Image ------------------------- -->
+  <section class="filler filler1">
+
+  </section>
+
+  <!-- ------------------------- Product Slider ------------------------- -->
+  <section class="product">
+
+    <div>
+      <h1> Product Part </h1>
+      <p> Lookie lookie at our collection of products. See one that you like? Then be sure to pick it up ;)</p>
+    </div>
+
+    <div>
+      <button class="sliderButton" id="sliderLeft" onclick="sliderLeft()">
+        < </button>
+
+          <div class="container" id="slider">
+            <div class="item" id="sliderItem">Product 1</div>
+            <div class="item" id="sliderItem">Product 2</div>
+            <div class="item" id="sliderItem">Product 3</div>
+            <div class="item" id="sliderItem">Product 4</div>
+            <div class="item" id="sliderItem">Product 5</div>
+            <div class="item" id="sliderItem">Product 6</div>
+          </div>
+
+          <button class="sliderButton" id="sliderRight" onclick="sliderRight()"> > </button>
+    </div>
+
+    <div>
+      <img src="images\temp.gif" alt="">
+      <h1> Enjoy with friends! </h1> <br>
+      <p> Apet najsen veq me fol ose per pije ose per kompani, nashta per subscription? butoni posht mi redirect</p> <br>
+      <a href="#"> <button class="smallButton"> Read More </button> </a>
+    </div>
+
+  </section>
+
+  <!-- ------------------------- Filler Section / Two image ------------------------- -->
+  <section class="filler filler2">
+
+    <div></div>
+    <div>
+      <p class="hidden"> Header </p>
+      <p class="hidden"> Short description talking about our values or quality of the product. :) </p>
+    </div>
+
+  </section>
+
+  <!-- ------------------------- Filler Section / Benefits ------------------------- -->
+  <section class="benefits">
+
+    <h1> Benefits to eating healthy: </h1> <br>
+
+    <div class="container">
+      <div class="item">
+        <img src="images\calendar.png" alt="">
+        <h2> Live Longer </h2> <br>
+        <h3> Scientists conclude that a sustained switch to an optimal diet from the age of 20 years could increase life expectancy by around 10.7 years for
+          women and 13
+          years for men. </h3>
+      </div>
+      <div class="item">
+        <img src="images\strength.png" alt="">
+        <h2> Keeps you stronger </h2> <br>
+        <h3> Healthy eating support your muscles, greatly improving recovery. It also and strengthens your bones, and boosts your immune system, which protects your body from
+          outside invaders.
+        </h3>
+      </div>
+      <div class="item">
+        <img src="images\graph.png" alt="">
+        <h2> Lowers risk </h2> <br>
+        <h3> People with a healthy diet have a lower risk of heart disease. type 2 diabetes and some cancers, helps maintain a healthy weight and supports healthy pregnancies.
+        </h3>
+      </div>
+    </div>
+    <br>
+    <h1> Join us on our mission to make the world more healthy :)</h1> <br>
+
+  </section>
+
+  <!-- ------------------------- Footer ------------------------- -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="item">
+        <ul>
+
+          <li>
+            <h1> My Fit Habit </h1>
+          </li> <br>
+          <li><a href="about.html"> About Us </a></li>
+          <li><a href="products.html"> Products </a></li>
+          <li><a href="products.html"> Item3 </a></li>
+          <li><a href="products.html"> Item4 </a></li>
+
+        </ul>
+      </div>
+      <div class="item">
+        <h1> Send us a email! </h1> <br>
+        <input type="text" name="" id=""> <br> <br>
+        <a href="mailto: dionkelmendi2003@gmail.com"> <button>Submit</button> </a>
+      </div>
+      <div class="item">
+        <h1> Contact </h1> <br>
+        <p> email@email.com </p>
+        <p> 049-123-456 </p> <br>
+        <h1> Stay Connected </h1>
+        <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+        <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div>
+      <h1 class="copyright">@2023 by MyFitHabit.</h1>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
+<script>
+
+  var x = 0;
+
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector("header").style.opacity = 0;
+    } else {
+      document.querySelector("header").style.opacity = 70 + "%";
+    }
+  }
+
+  function sliderLeft() {
+
+    var slider = document.querySelector("#slider");
+    var sliderCount = document.querySelector("#slider").children.length;
+    var sliderItems = document.querySelectorAll("#sliderItem")
+
+    if (x < 0) {
+
+      x += 350;
+    }
+
+    sliderItems.forEach(si => {
+
+      si.style.transform = "translateX(" + x + "px)";
+
+    });
+
+    // console.log("Going Left")
+    // console.log(x)
+    // console.log(sliderCount)
+  }
+
+  function sliderRight() {
+
+    var slider = document.querySelector("#slider");
+    var sliderCount = document.querySelector("#slider").children.length;
+    var sliderItems = document.querySelectorAll("#sliderItem")
+
+    // console.log(sliderItems);
+
+    if (x > ((sliderCount - 3) * -350)) {
+
+      x -= 350;
+    }
+
+    sliderItems.forEach(si => {
+
+      si.style.transform = "translateX(" + x + "px)";
+
+    });
+
+    // console.log("Going Right")
+    // console.log(x)
+    // console.log(sliderCount)
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden')
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>
