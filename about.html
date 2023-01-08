@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="main.js"></script>
   <script src="https://kit.fontawesome.com/f4fb5010ea.js" crossorigin="anonymous"></script>
 
   <title> About Us </title>
@@ -19,14 +20,17 @@
     <ul>
 
       <div>
-        <li class="logo">My Fit Habit</li>
+        <li class="logo">
+          <a href="index.html">
+            <img src="images/favicon.png" alt="" style="height: 30px;">
+            My<span style="color: green;">Fit</span>Habit
+          </a>
+        </li>
       </div>
 
       <div>
         <li class="item"><a href="about.html"> About Us </a></li>
         <li class="item"><a href="products.html"> Products </a></li>
-        <li class="item"><a href="products.html"> Item3 </a></li>
-        <li class="item"><a href="products.html"> Item4 </a></li>
         <li class="item">
           <a href="login.html">
             <i class="fa-solid fa-users"></i>
@@ -126,12 +130,10 @@
         <ul>
 
           <li>
-            <h1> My Fit Habit </h1>
+            <h1 onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="cursor: pointer;"> My<span style="color: #dad870;">Fit</span>Habit </h1>
           </li> <br>
           <li><a href="about.html"> About Us </a></li>
           <li><a href="products.html"> Products </a></li>
-          <li><a href="products.html"> Item3 </a></li>
-          <li><a href="products.html"> Item4 </a></li>
 
         </ul>
       </div>

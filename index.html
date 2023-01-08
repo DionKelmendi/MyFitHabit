@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Page</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="main.js"></script>
   <script src="https://kit.fontawesome.com/f4fb5010ea.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,14 +18,17 @@
     <ul>
 
       <div>
-        <li class="logo"> My Fit Habit</li>
+        <li class="logo">
+          <a href="index.html">
+            <img src="images/favicon.png" alt="" style="height: 30px;">
+            My<span style="color: green;">Fit</span>Habit
+          </a>
+        </li>
       </div>
 
       <div>
         <li class="item"><a href="about.html"> About Us </a></li>
         <li class="item"><a href="products.html"> Products </a></li>
-        <li class="item"><a href="products.html"> Item3 </a></li>
-        <li class="item"><a href="products.html"> Item4 </a></li>
         <li class="item">
           <a href="login.html">
             <i class="fa-solid fa-users"></i>
@@ -55,8 +59,8 @@
 
       <div class="subtext">
         <h1> My Fit Habit </h1>
-        <p> NenTitulli </p>
-        <a href="#"> <button class="smallButton"> Order Online </button> </a>
+        <p> Making you healthy one shake at a time </p>
+        <a href="login.html"> <button class="smallButton"> Order Online </button> </a>
       </div>
     </div>
 
@@ -71,21 +75,51 @@
   <section class="product">
 
     <div>
-      <h1> Product Part </h1>
+      <h1> Our Products </h1> <br>
       <p> Lookie lookie at our collection of products. See one that you like? Then be sure to pick it up ;)</p>
     </div>
 
-    <div>
+    <div class="slider">
       <button class="sliderButton" id="sliderLeft" onclick="sliderLeft()">
         < </button>
 
           <div class="container" id="slider">
-            <div class="item" id="sliderItem">Product 1</div>
-            <div class="item" id="sliderItem">Product 2</div>
-            <div class="item" id="sliderItem">Product 3</div>
-            <div class="item" id="sliderItem">Product 4</div>
-            <div class="item" id="sliderItem">Product 5</div>
-            <div class="item" id="sliderItem">Product 6</div>
+            <div class="item" id="sliderItem">
+              <a href="#">
+                <img src="images/smoothie1.jpg" alt="">
+                <p> Orange Blast </p>
+              </a>
+            </div>
+            <div class="item" id="sliderItem">
+              <a href="#">
+                <img src="images/smoothie2.jpg" alt="">
+                <p> Tropical Sensation </p>
+              </a>
+            </div>
+            <div class="item" id="sliderItem">
+              <a href="#">
+                <img src="images/smoothie3.jpg" alt="">
+                <p> Avocado Slam </p>
+              </a>
+            </div>
+            <div class="item" id="sliderItem">
+              <a href="#">
+                <img src="images/smoothie4.jpg" alt="">
+                <p> Blue Lagoon </p>
+              </a>
+            </div>
+            <div class="item" id="sliderItem">
+              <a href="#">
+                <img src="images/smoothie5.jpg" alt="">
+                <p> Blueberry Punch </p>
+              </a>
+            </div>
+            <div class="item" id="sliderItem">
+              <a href="#">
+                <img src="images/smoothie6.jpg" alt="">
+                <p> Coconut Crash </p>
+              </a>
+            </div>
           </div>
 
           <button class="sliderButton" id="sliderRight" onclick="sliderRight()"> > </button>
@@ -94,8 +128,8 @@
     <div>
       <img src="images\temp.gif" alt="">
       <h1> Enjoy with friends! </h1> <br>
-      <p> Apet najsen veq me fol ose per pije ose per kompani, nashta per subscription? butoni posht mi redirect</p> <br>
-      <a href="#"> <button class="smallButton"> Read More </button> </a>
+      <p> This company was made by a group of friends, so it makes sense to be enjoyed by a group of friends as well. </p> <br> <br>
+      <a href="about.html"> <button class="smallButton"> Read More </button> </a>
     </div>
 
   </section>
@@ -105,8 +139,9 @@
 
     <div></div>
     <div>
-      <p class="hidden"> Header </p>
-      <p class="hidden"> Short description talking about our values or quality of the product. :) </p>
+      <p class="hidden"> Indulge on your Fit Habit™ </p>
+      <p class="hidden" style="text-align: justify;"> Our shakes are made by using high-quality, high-grade fruits and vegetables. Just the thing you need after a tough workout.
+      </p>
     </div>
 
   </section>
@@ -153,12 +188,10 @@
         <ul>
 
           <li>
-            <h1> My Fit Habit </h1>
+            <h1 onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="cursor: pointer;"> My<span style="color: #dad870;">Fit</span>Habit </h1>
           </li> <br>
           <li><a href="about.html"> About Us </a></li>
           <li><a href="products.html"> Products </a></li>
-          <li><a href="products.html"> Item3 </a></li>
-          <li><a href="products.html"> Item4 </a></li>
 
         </ul>
       </div>
@@ -169,7 +202,7 @@
       </div>
       <div class="item">
         <h1> Contact </h1> <br>
-        <p> email@email.com </p>
+        <p> fithabits@email.com </p>
         <p> 049-123-456 </p> <br>
         <h1> Stay Connected </h1>
         <a href=""> <i class="fa-brands fa-facebook"></i> </a>
@@ -191,67 +224,9 @@
 
 <script>
 
-  var x = 0;
-
-  window.onscroll = function () { scrollFunction() };
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.querySelector("header").style.opacity = 0;
-    } else {
-      document.querySelector("header").style.opacity = 70 + "%";
-    }
-  }
-
-  function sliderLeft() {
-
-    var slider = document.querySelector("#slider");
-    var sliderCount = document.querySelector("#slider").children.length;
-    var sliderItems = document.querySelectorAll("#sliderItem")
-
-    if (x < 0) {
-
-      x += 350;
-    }
-
-    sliderItems.forEach(si => {
-
-      si.style.transform = "translateX(" + x + "px)";
-
-    });
-
-    // console.log("Going Left")
-    // console.log(x)
-    // console.log(sliderCount)
-  }
-
-  function sliderRight() {
-
-    var slider = document.querySelector("#slider");
-    var sliderCount = document.querySelector("#slider").children.length;
-    var sliderItems = document.querySelectorAll("#sliderItem")
-
-    // console.log(sliderItems);
-
-    if (x > ((sliderCount - 3) * -350)) {
-
-      x -= 350;
-    }
-
-    sliderItems.forEach(si => {
-
-      si.style.transform = "translateX(" + x + "px)";
-
-    });
-
-    // console.log("Going Right")
-    // console.log(x)
-    // console.log(sliderCount)
-  }
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      console.log(entry)
+      // console.log(entry)
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
       } else {
