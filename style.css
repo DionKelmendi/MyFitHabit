@@ -548,3 +548,93 @@ footer p{
   filter: blur(0);
   transform: translateX(0);
 }
+
+.productMain{
+
+  padding-top: 70px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.productMain .mainH{
+
+  align-self: flex-start;
+  padding-left: 20%;
+}
+
+.productMain .mainH hr{
+  
+  width: 40%;
+  color: green;
+
+  transition: 0.3s all ease-in-out;
+}
+
+.productMain .mainH:hover > hr{
+
+  width: 100%;
+}
+
+.productMain .container{
+
+  display: flex;
+  gap: 50px;
+
+  flex-wrap: wrap;
+  width: 1000px;
+  /* outline: 1px solid lime; */
+  transition: 0.3s all ease-out;
+}
+
+.productMain .item{
+
+  border: 1px solid black;
+
+  min-width: 300px;
+  height: 300px;
+  flex-basis: 300px;
+  overflow: hidden;
+  display: block;
+
+  transition: 0.3s all ease-out;
+  transform: translateX(0px);
+}
+
+.productMain .item img{
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s all ease-out;
+  transform: scale(1);
+  object-fit: cover;
+}
+
+.productMain .item:hover > a img{
+
+  transition: 0.3s all ease-out;
+  transform: scale(1.1);
+}
+
+.productMain .item p{
+
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  background: #f7f7f7;
+  z-index: 1;
+  opacity: 70%;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  outline: 1px solid black;
+
+  display: flex;
+  justify-content: space-between;
+}
