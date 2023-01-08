@@ -52,16 +52,17 @@ header div{
   color: black;
 }
 
-.logo {
-
-  font-size: 2.5em;
-}
-
-header .item a{
+header a{
   
   color: black;
   transition: all 0.5s;
   font-size: 1.25em;
+}
+
+.logo {
+
+  font-size: 30px;
+  color: black;
 }
 
 header .item a:hover{
@@ -250,12 +251,12 @@ svg{
   gap: 50px;
 
   /* outline: 1px solid lime; */
-  width: 1000px;
+  width: 1001px;
   transition: 0.3s all ease-out;
   overflow: hidden;
 }
 
-.product div:nth-child(2){
+.product .slider{
 
   display: flex;
   gap: 50px;
@@ -266,14 +267,43 @@ svg{
   border: 1px solid black;
 
   min-width: 300px;
-  min-height: 300px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  display: block;
 
   transition: 0.3s all ease-out;
   transform: translateX(0px);
+}
+
+.product .item img{
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s all ease-out;
+  transform: scale(1);
+  object-fit: cover;
+}
+
+.product .item:hover > a img{
+
+  transition: 0.3s all ease-out;
+  transform: scale(1.1);
+}
+
+.product .item p{
+
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  background: #f7f7f7;
+  z-index: 1;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  outline: 1px solid black;
 }
 
 .sliderButton{
@@ -397,6 +427,9 @@ footer input{
   padding: 10px;
   border-bottom: 2px solid white;
   outline: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 14px;
 
   width: 250px;
 }
