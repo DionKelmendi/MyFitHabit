@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Login</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
-	<!--===============================================================================================-->
-	<script src="main.js"></script>
-	<!--===============================================================================================-->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
+  <title>MyFit Login</title>
 </head>
+<body style="background: url(images/veggies.jpg);">
+	<header>
+    <ul>
 
-<body style="background-color: #666666;">
+      <div>
+        <li class="logo">
+          <a href="index.html">
+            <img src="images/favicon.png" alt="" style="height: 30px;">
+            My<span style="color: green;">Fit</span>Habit
+          </a>
+        </li>
+      </div>
 
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-43">
-						Login to continue
-					</span>
+      <div>
+        <li class="item"><a href="about.html"> About Us </a></li>
+        <li class="item"><a href="products.html"> Products </a></li>
+        <li class="item">
+          <a href="login.html">
+            <i class="fa-solid fa-users"></i>
+            Log In
+          </a>
+        </li>
+      </div>
+
+    </ul>
+  </header>
+
+	<form >
+		<h3>Log in</h3>
+
+		<label class="emailBox">
+			<input type="email" id="email" placeholder="Email">
+			<span class="emailText"></span>
+		</label>
+
+		<label class="passBox">
+			<input type="password" id="password" placeholder="Password">
+			<span class="passText"></span>
+		</label>
+
+		<button class="button">Log in</button>
 
 
-					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
-					</div>
+	</form>
 
+	<script>
+		const email = document.getElementById("email");
+		const password = document.getElementById("password");
 
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
-					</div>
+		email.addEventListener('input',()=>{
+			const emailBox = document.querySelector('.emailBox');
+			const emailText = document.querySelector('.emailText');
+			const emailPattern = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
 
-					<div class="flex-sb-m w-full p-t-3 p-b-32">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
+			if(email.value.match(emailPattern)){
+				emailBox.classList.add('valid');
+				emailBox.classList.remove('invalid');
+				emailText.innerHTML = "Your email address is valid";
+			}else{
+				emailBox.classList.add('invalid');
+				emailBox.classList.remove('valid');
+				emailText.innerHTML = "Must be a valid email address.";
+			}
+		});
 
-						<div>
-							<a href="#" class="txt1">
-								Forgot Password?
-							</a>
-						</div>
-					</div>
+		password.addEventListener('input',()=>{
+			const passBox = document.querySelector('.passBox');
+			const passText = document.querySelector('.passText');
+			const passPattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-
-					<div class="text-center p-t-46 p-b-20">
-						<span class="txt2">
-							or sign up using
-						</span>
-					</div>
-
-					<div class="login100-form-social flex-c-m">
-						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-facebook-f" aria-hidden="true"></i>
-						</a>
-
-						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-
-				<div class="login100-more" style="background-image: url('images/food.jpg');">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--===============================================================================================-->
-	<!--===============================================================================================-->
-
+			if(password.value.match(passPattern)){
+				passBox.classList.add('valid');
+				passBox.classList.remove('invalid');
+				passText.innerHTML = "Your password is valid";
+			}else{
+				passBox.classList.add('invalid');
+				passBox.classList.remove('valid');
+				passText.innerHTML = "Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.";
+			}
+		});
+	</script>
 </body>
-
 </html>

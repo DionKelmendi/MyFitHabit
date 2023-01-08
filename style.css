@@ -9,13 +9,13 @@
 }
 
 body{
-  
+
   background: url(images/background.png);
   overflow-x: hidden;
 }
 
 ul{
-  
+
 	list-style-type: none;
 }
 
@@ -32,12 +32,12 @@ header{
   /* outline: 1px solid lime; */
   transition: all 0.3s;
   background: #f7f7f7;
-
-  opacity: 70%;
+	align-self: flex-start;
+  opacity: 80%;
 }
 
 header ul{
-  
+
 
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ header div{
 }
 
 header a{
-  
+
   color: black;
   transition: all 0.5s;
   font-size: 1.25em;
@@ -71,7 +71,6 @@ header .item a:hover{
 }
 
 .hero{
-
   margin-top: -20px;
   display: flex;
   align-items: center;
@@ -154,12 +153,12 @@ svg{
 }
 
 .hero a{
-  
+
   align-self: end;
 }
 
 .hero button{
-  
+
   margin-top: 50px;
 }
 
@@ -170,7 +169,7 @@ svg{
   cursor: pointer;
   transition: 0.3s all;
   background-color: #ff5c4d;
-    
+
   border: 2px solid #ff5c4d;
   border-radius: 100px;
   color: #f7f7f7;
@@ -186,11 +185,11 @@ svg{
 
   display: flex;
   height: 80vh;
-  
+
 }
 
 .filler1{
-  
+
   background: url(images/fillerBackground1.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -318,7 +317,7 @@ svg{
   color: #ff5c4d;
   font-weight: bold;
   font-size: 18px;
-  
+
   align-self: center;
   transition: 0.2s all;
 }
@@ -391,7 +390,7 @@ svg{
 }
 
 footer{
-  
+
   text-align: center;
   color: white;
   background: dimgray;
@@ -442,7 +441,7 @@ footer button{
   transition: 0.3s all;
   background-color: transparent;
   color: white;
-    
+
   border: 2px solid white;
 }
 
@@ -462,13 +461,13 @@ footer hr{
 }
 
 footer .item a{
-  
+
   color: white;
   font-size: 1.25em;
 }
 
 footer p{
-  
+
   font-size: 1.25em;
 }
 
@@ -514,7 +513,7 @@ footer p{
 }
 
 .about .mainH hr{
-  
+
   width: 10%;
   color: #ff5c4d;
 
