@@ -1,3 +1,249 @@
+Amantin Bajrami
+#3430
+I Nxene
+
+
+
+Amantin Bajrami
+Direct Message
+Direct Message:Ky Dudi
+720p
+30FPS
+LIVE
+Search
+
+region
+Automatic
+
+
+
+
+
+
+
+
+chat
+January 5, 2023
+Amantin Bajrami
+ started a call that lasted 28 minutes.
+ — 01/05/2023 8:47 PM
+
+Ky Dudi — 01/05/2023 8:48 PM
+
+
+
+Amantin Bajrami — 01/05/2023 8:48 PM
+quit discord
+[8:48 PM]
+hnin para
+[8:48 PM]
+pra
+[8:48 PM]
+p
+
+Ky Dudi — 01/05/2023 8:48 PM
+a pom nin?
+[8:50 PM]
+rip a tshkoj rrjeti a
+
+Ky Dudi — 01/05/2023 9:07 PM
+insert into Produkti(emri, përshkrimi, çmimi) 
+values ('Emri', 'Pershkrimi', 200)
+[9:08 PM]
+insert into Produkti
+values ('Emri', 'Pershkrimi', 200)
+[9:10 PM]
+insert into Krijon_ProduktVjetër(Zbritja_ID,Inventari_ID,Koha_Qëndrimit)
+values (1,1,'1 vitë'),                          --koha qendrimit "varchar", psh: 5ditë
+       (2,10,'2 vite'),
+       (3,9,'2 vite'),
+       (4,7,'2 vite'),
+       (5,8,'1 vitë'),
+       (6,1,'1 vitë'),
+       (7,2,'2 vite'),
+       (8,25,'1 vitë'),
+       (9,21,'2 vite'),
+       (10,17,'1 vitë'),
+       (11,18,'2 vite'),
+       (12,16,'2 vite'),
+       (13,14,'2 vite'),
+       (14,11,'2 vite'),
+       (15,12,'1 vitë'),
+       (16,5,'2 vite'),
+       (17,7,'1 vitë'),
+       (18,8,'2 vite'),
+       (19,7,'2 vite'),
+       (20,9,'1 vitë'),
+       (21,4,'2 vite'),
+       (22,1,'2 vite'),
+       (23,2,'2 vite'),
+       (24,5,'1 vitë'),
+       (25,22,'2 vite');
+       
+       update Klienti 
+       set qyteti='Mitrovicë' where qyteti='Mitrovic'
+
+       UPDATE Klienti
+       SET emri = 'Filan', qyteti= 'Prishtinë'
+       WHERE Klient_ID = 7;
+
+       UPDATE Klienti
+       SET emri = 'Afrim' WHERE Klient_ID = 8;
+    
+       UPDATE Produkti
+       SET emri = 'Macbook Air M1' WHERE Produkti_ID= 1;
+
+       UPDATE Depoja
+       SET Sasia_Produktit = 200 WHERE Produkti_ID = 4;
+
+       UPDATE Inventari
+       SET Sasia_Produktit = 550 WHERE Produkti_ID = 8;
+       
+       UPDATE Krijon_ProduktVjetër
+       SET Koha_Qëndrimit = ' 1.5 vite' WHERE Inventari_ID = 1;
+
+       UPDATE Shitja
+       SET Totali_Shitjev = 1111 WHERE Punëtori_ID = 10;
+
+       
+
+       DELETE FROM Telefoni WHERE Klient_ID IN (1,2);
+       DELETE FROM Telefoni_Staff WHERE Punëtori_ID in(10,8,3);
+[9:15 PM]
+'2021-05-22T05:26:22'
+[9:15 PM]
+'03-09-2022'
+[9:16 PM]
+'07-18-2021' te koka muji tani dita
+
+Ky Dudi — 01/05/2023 10:38 PM
+```insert into Punëtori(Emri,Mbiemri,Email,Data_Fillimit,Rroga,Bonusi,PikaShitëse_ID,Menaxheri)
+values   ('Zymer', 'Bregtalia', 'zb@ubt-uni.net',   '03-09-2022',400,0,1,4),
+         ('Erin', 'Orana', 'eo@ubt-uni.net',        '05-13-2021',500,0,2,8),
+         ('Fasul', 'Mejremi', 'fm@ubt-uni.net',     '12-11-2022',400,0,3,4),
+         ('Safet', 'Safeti', 'ss@ubt-uni.net',      '10-18-2020',1500,0,4,8),
+         ('Egzon', 'Peshku', 'ep@ubt-uni.net',      '07-26-2022',500,0,5,4),
+Expand
+message.txt
+3 KB
+[10:38 PM]
+veq e pasna shkrujt 4 edhe 8
+
+Amantin Bajrami — 01/05/2023 10:38 PM
+a e ke
+[10:38 PM]
+bo
+[10:38 PM]
+ashtu
+[10:38 PM]
+qe incrementet
+[10:38 PM]
+vet
+[10:38 PM]
+a po
+
+Ky Dudi — 01/05/2023 10:38 PM
+CREATE TABLE Punëtori(
+Punëtori_ID INT IDENTITY(1,1) PRIMARY KEY,
+Emri VARCHAR(15) NOT NULL,
+Mbiemri VARCHAR(15) NOT NULL,
+Email VARCHAR(64) NOT NULL,
+Data_Fillimit DATE,
+Rroga INT NOT NULL,
+Bonusi INT,
+PikaShitëse_ID INT FOREIGN KEY REFERENCES Pika_Shitëse(PikaShitëse_ID),
+Menaxheri INT FOREIGN KEY REFERENCES Punëtori(Punëtori_ID) 
+)
+[10:38 PM]
+qe puntori
+
+Amantin Bajrami — 01/05/2023 10:38 PM
+op
+
+Ky Dudi — 01/05/2023 10:39 PM
+auto increment nuk o menaxheri
+
+Amantin Bajrami — 01/05/2023 10:39 PM
+pe di
+
+Ky Dudi — 01/05/2023 10:39 PM
+veq puntori id
+
+Amantin Bajrami — 01/05/2023 10:39 PM
+po puntorin
+
+Ky Dudi — 01/05/2023 10:39 PM
+ye
+
+Amantin Bajrami — 01/05/2023 10:47 PM
+mir osht
+[10:47 PM]
+po sdi
+[10:47 PM]
+qka ish kon problemi
+[10:47 PM]
+e ndreq
+[10:47 PM]
+se qashtu ebojsha
+[10:47 PM]
+ama ku me dit
+[10:47 PM]
+thnx
+[10:47 PM]
+anyway
+[10:47 PM]
+
+January 8, 2023
+Ky Dudi
+ started a call that lasted 2 hours.
+ — 01/08/2023 4:39 PM
+
+Ky Dudi — 01/08/2023 4:45 PM
+https://www.youtube.com/watch?v=vGfY2rSIcfk
+YouTube
+VIP Tutorials
+Email & Password Validation Check Using Vanilla Javascript | How To...
+
+
+Ky Dudi — 01/08/2023 4:59 PM
+<title>Login V18</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+    <!--===============================================================================================-->
+
+Ky Dudi — 01/08/2023 5:16 PM
+https://www.monyobrewing.com/shop?product_id=862
+MONYO Brewing Co.
+
+[5:18 PM]
+<link rel="icon" type="image/png" href="images/favicon.png" />
+
+Ky Dudi — 01/08/2023 5:39 PM
+background: url();
+[5:43 PM]
+images/food.jpg
+
+Ky Dudi — 01/08/2023 6:01 PM
+
+
+Ky Dudi — 01/08/2023 6:15 PM
+backdrop-filter: blur(10px);
+
+Ky Dudi — 01/08/2023 6:23 PM
+ye veq 1min
+January 10, 2023
+Ky Dudi
+ started a call.
+ — Today at 7:14 PM
+NEW
+
+Ky Dudi — Today at 7:19 PM
 *{
 
 	margin: 0;
@@ -9,13 +255,13 @@
 }
 
 body{
-
+  
   background: url(images/background.png);
   overflow-x: hidden;
 }
 
 ul{
-
+  
 	list-style-type: none;
 }
 
@@ -32,12 +278,12 @@ header{
   /* outline: 1px solid lime; */
   transition: all 0.3s;
   background: #f7f7f7;
-	align-self: flex-start;
-  opacity: 80%;
+
+  opacity: 70%;
 }
 
 header ul{
-
+  
 
   display: flex;
   align-items: center;
@@ -53,7 +299,7 @@ header div{
 }
 
 header a{
-
+  
   color: black;
   transition: all 0.5s;
   font-size: 1.25em;
@@ -71,6 +317,120 @@ header .item a:hover{
 }
 
 .hero{
+
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  background: url(images/heroBackground1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 105vh;
+}
+
+.hero .container img{
+
+  height: 750px;
+  width: 750px;
+  mask-image: url(#mask1);
+  mask-size: cover;
+
+  transform: translateX(120px) scale(0.85);
+  transition: 0.3s all;
+}
+
+... (541 lines left)
+Collapse
+message.txt
+9 KB
+
+Message @Ky Dudi
+﻿
+
+
+
+
+ to select
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: calibri;
+  letter-spacing: 1px;
+  /* outline: 1px solid lime; */
+}
+
+body{
+  
+  background: url(images/background.png);
+  overflow-x: hidden;
+}
+
+ul{
+  
+	list-style-type: none;
+}
+
+a{
+
+  text-decoration: none;
+}
+
+header{
+
+	position: fixed;
+  width: 100%;
+  padding: 25px 40px;
+  /* outline: 1px solid lime; */
+  transition: all 0.3s;
+  background: #f7f7f7;
+  align-self: flex-start;
+
+  opacity: 70%;
+}
+
+header ul{
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div{
+
+  display: flex;
+  gap: 50px;
+
+  color: black;
+}
+
+header a{
+  
+  color: black;
+  transition: all 0.5s;
+  font-size: 1.25em;
+}
+
+.logo {
+
+  font-size: 30px;
+  color: black;
+}
+
+header .item a:hover{
+
+  color: #ff5c4d;
+}
+
+.hero{
+
   margin-top: -20px;
   display: flex;
   align-items: center;
@@ -153,12 +513,12 @@ svg{
 }
 
 .hero a{
-
+  
   align-self: end;
 }
 
 .hero button{
-
+  
   margin-top: 50px;
 }
 
@@ -169,7 +529,7 @@ svg{
   cursor: pointer;
   transition: 0.3s all;
   background-color: #ff5c4d;
-
+    
   border: 2px solid #ff5c4d;
   border-radius: 100px;
   color: #f7f7f7;
@@ -185,11 +545,11 @@ svg{
 
   display: flex;
   height: 80vh;
-
+  
 }
 
 .filler1{
-
+  
   background: url(images/fillerBackground1.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -317,7 +677,7 @@ svg{
   color: #ff5c4d;
   font-weight: bold;
   font-size: 18px;
-
+  
   align-self: center;
   transition: 0.2s all;
 }
@@ -390,7 +750,7 @@ svg{
 }
 
 footer{
-
+  
   text-align: center;
   color: white;
   background: dimgray;
@@ -441,7 +801,7 @@ footer button{
   transition: 0.3s all;
   background-color: transparent;
   color: white;
-
+    
   border: 2px solid white;
 }
 
@@ -461,13 +821,13 @@ footer hr{
 }
 
 footer .item a{
-
+  
   color: white;
   font-size: 1.25em;
 }
 
 footer p{
-
+  
   font-size: 1.25em;
 }
 
@@ -513,7 +873,7 @@ footer p{
 }
 
 .about .mainH hr{
-
+  
   width: 10%;
   color: #ff5c4d;
 
@@ -547,3 +907,94 @@ footer p{
   filter: blur(0);
   transform: translateX(0);
 }
+
+.productMain{
+
+  padding-top: 70px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.productMain .mainH{
+
+  align-self: flex-start;
+  padding-left: 20%;
+}
+
+.productMain .mainH hr{
+  
+  width: 40%;
+  color: green;
+
+  transition: 0.3s all ease-in-out;
+}
+
+.productMain .mainH:hover > hr{
+
+  width: 100%;
+}
+
+.productMain .container{
+
+  display: flex;
+  gap: 50px;
+
+  flex-wrap: wrap;
+  width: 1000px;
+  /* outline: 1px solid lime; */
+  transition: 0.3s all ease-out;
+}
+
+.productMain .item{
+
+  border: 1px solid black;
+
+  min-width: 300px;
+  height: 300px;
+  flex-basis: 300px;
+  overflow: hidden;
+  display: block;
+
+  transition: 0.3s all ease-out;
+  transform: translateX(0px);
+}
+
+.productMain .item img{
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s all ease-out;
+  transform: scale(1);
+  object-fit: cover;
+}
+
+.productMain .item:hover > a img{
+
+  transition: 0.3s all ease-out;
+  transform: scale(1.1);
+}
+
+.productMain .item p{
+
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2em;
+  background: #f7f7f7;
+  z-index: 1;
+  opacity: 70%;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  outline: 1px solid black;
+
+  display: flex;
+  justify-content: space-between;
+}
+
