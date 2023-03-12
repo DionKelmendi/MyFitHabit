@@ -1,34 +1,39 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-	height: 100vh;
+
+body {
+	height: 100vh !important;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
-form{
+
+form {
 	position: relative;
-	width: 400px;
+	width: 440px;
 	padding: 50px;
 	backdrop-filter: blur(10px);
-	border-radius: 5px;
+	border-radius: 25px;
 }
-h3{
+
+h3 {
 	font-size: 33px;
-	font-family: "Veranda", Veranda, sans-serif;
 	color: #f9f9f9;
 	letter-spacing: 1px;
 	font-weight: 500;
 	text-align: center;
 }
-form label{
+
+form label {
 	position: relative;
 	display: block;
 }
-form input{
+
+form input {
 	margin: 10px 0;
 	width: 100%;
 	background: #292929;
@@ -39,24 +44,31 @@ form input{
 	border: none;
 	outline: none;
 }
+
+form input[type="checkbox"] {
+	width: 10px;
+}
+
 .emailText,
-.passText{
+.passText {
 	display: block;
 	font-weight: 300;
 	font-style: italic;
-	padding: 5px;
 }
+
 label.valid .emailText,
-label.valid .passText{
+label.valid .passText {
 	font-style: normal;
 
 }
+
 label.invalid .emailText,
-label.invalid .passText{
+label.invalid .passText {
 	font-style: normal;
 }
+
 label.valid::before,
-label.invalid::before{
+label.invalid::before {
 	content: "";
 	position: absolute;
 	width: 24px;
@@ -65,24 +77,46 @@ label.invalid::before{
 	right: 5px;
 	z-index: 100;
 }
-label.valid::before{
+
+label.valid::before {
 	background: url(check.svg)no-repeat center /cover;
 }
-label.invalid::before{
+
+label.invalid::before {
 	background: url(error.png)no-repeat center /cover;
 }
 
-.button{
+.button {
 	background-color: #023020;
+	transition: 1.5s all;
 	border-radius: 20px;
 	border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
- margin-left: 100px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-left: 100px;
+}
+
+p {
+	margin-top: 20px;
+	color: lightgray;
+}
+
+a {
+
+	color: #023020;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+
+	header {
+
+		display: none;
+	}
 }
